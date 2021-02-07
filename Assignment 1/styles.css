@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Raleway, 'Times New Roman', Times, serif;
+    color: lightslategray;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+.main-header {
+    background-image: url("images/front-page/top-option-one.jpg");
+    background-size: cover;
+    background-color: lightgray;
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+    border-bottom: 3px solid black;
+}
+
+nav ul{
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+}
+nav a{
+    display: inline-block;
+    padding: .75em;
+    text-decoration: none;
+    color: rgba(241, 237, 238, 0.918);
+}
+
+nav a:hover{
+    background-color:rgba(255, 255, 255, 0.3);
+
+}
+
+.top-navigation{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15)
+}
+
+.top-navigation li{
+    padding: 0.5%;
+}
+
+.page-title {
+    color: whitesmoke;
+    font-size: 4em;
+    text-align: left;
+    margin-left: 0.5em;
+}
+
+.page-title:hover{
+    color:rgba(165, 64, 86, 0.75);
+    text-shadow: 2px 2px black;
+}
+
+p{
+    color: lightslategray;
+}
+
+
+.chimp-description{
+    margin: 1em;
+}
+
+.section-header{
+    color: gray;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.front-page-images{
+    float: right;
+    border-radius: 50% solid gray;
+}
+
+.front-footer{
+    background-color: rgba(53, 165, 180, 0.8);
+    color: white;
+    font-size: 2em;
+    font-style: italic;
+    padding: .25em;
+    border: 5px solid lightblue;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-container li {
+    padding: 0 .5em;
+}
+
+.footer-container img {
+    width: 50px;
+    height: 50px;
+}
