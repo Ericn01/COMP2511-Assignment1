@@ -5,6 +5,9 @@
     font-family: Raleway, 'Times New Roman', Times, serif;
     color: lightslategray;
 }
+a {
+    text-decoration: none;
+}
 html, body{
     padding: 0;
     margin: 0;
@@ -17,8 +20,32 @@ html, body{
     background-blend-mode: multiply;
     padding-bottom: 30px;
     border-bottom: 3px solid black;
+    
 }
-
+.information-header {
+    background-image: url("images/information-page/info-header.jpg");
+    background-size: cover;
+    background-color: lightgray;
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+    border-bottom: 3px solid black;
+}
+.stats-header {
+    background-image: url("images/stats-page/stats-main.jpg");
+    background-size: cover;
+    background-color: lightgray;
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+    border-bottom: 3px solid black;
+}
+.about-header {
+    background-image: url("images/about-page/about-main.jpg");
+    background-size: cover;
+    background-color: lightgray;
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+    border-bottom: 3px solid black;
+}
 nav ul{
     margin: 0;
 }
@@ -37,7 +64,10 @@ nav a:hover{
     background-color:rgba(255, 255, 255, 0.3);
 
 }
-
+hr{
+    height: 0.25em;
+    color: red;
+}
 .top-navigation{
     text-align: center;
     font-size: 1.1em;
@@ -69,9 +99,6 @@ p{
 .chimp-description{
     margin: 1em;
 }
-.about-us{
-    margin: 1em;
-}
 
 .section-header{
     color: gray;
@@ -79,9 +106,20 @@ p{
     font-size: 2em;
 }
 
-.front-page-images{
+.behavior-section-chimp{
     float: right;
-    border-radius: 50% solid gray;
+    text-align: center;
+    margin: 10px;
+    padding: 0px;
+}
+.what-are-chimps-image:hover{
+    margin: 0px;
+    padding: 5px;
+}
+.image-caption-font{
+    font-size: 1em;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .front-footer{
@@ -107,7 +145,19 @@ p{
     padding: 0 .5em;
 }
 
+.what-are-chimps-image{
+    float: left;
+    height: 250px;
+    display: block;
+    border-radius: 50%;
+    padding: 20px;
+}
+
 .footer-container img {
     width: 50px;
     height: 50px;
+}
+
+.page-subtitle{
+    padding: .25em;
 }
