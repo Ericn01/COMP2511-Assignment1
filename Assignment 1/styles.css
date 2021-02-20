@@ -22,7 +22,7 @@ html, body{
     border-bottom: 3px solid black;
     
 }
-.information-header {
+.booking-header {
     background-image: url("images/information-page/info-header.jpg");
     background-size: cover;
     background-color: lightgray;
@@ -171,44 +171,145 @@ p{
     padding: .25em;
 }
 
-.sliders{
-    margin: 20px;
+
+
+.button{
+    text-align: center;
+    vertical-align: middle;
+    padding: .55em;
+    cursor: pointer;
+    max-width: 15%;
+    color: white;
+    background-color: #56CCF2;  
+    border: none;
+    border-radius: .3em;
+    font-size: 1em;
+    font-weight: bold;
 }
-.slider{
-    -webkit-appearance: none;
-    appearance: none;
-    width: 30%;
-    height: 7px;
-    outline: gray;
-    border-radius: 3px solid gray;
-    background: linear-gradient(90deg, rgba(224,74,55,1) 0%, rgba(217,249,24,1) 50%, rgba(83,163,36,1) 100%);
+
+.button:hover{
+    background-color: #2d9cdb;
+}
+
+.front-message{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.seminar-header{
+    font-size: 2.5em;
+    font: dark-grey;
+    color: rgb(42, 74, 122);
+    text-shadow: 1px 1px black;
+}
+.seminar-subheader{
+    font-size: 1em;
+    font-style: italic;
 
 }
 
-.slider::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    width: 48px;
-    height: 48px;
-    cursor:pointer;
-    position:relative;
+.seminar-row{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
 }
 
-.selector{
-    height: 104px;
-    width: 48px;
-    position: absolute;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
+.seminar-row:last-child {
+    border-bottom: none;
+    margin-bottom: 30px;
 }
-.selection-button{
-    height: 48px;
-    width: 48px;
-    background-image: url(images/information-page/31deb50d5387de914ebdbee2ac75bb76.png);
-    background-size: cover;
-    background-position: center;
+
+.seminar-item{
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.seminar-date{
+    color: #555;
+    font-weight: bold;
+    width: 15%;
+}
+
+.seminar-location{
+    width: 24%;
+}
+
+.seminar-venue{
+    width: 42%;
+}
+
+.waving-chimp{
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+}
+
+.booking-text{
+    background-color: lightblue;
+    text-align: center;
+    font-size: 2em;
+}
+.seminar-image{
+    margin-bottom: 25px;
     border-radius: 50%;
-    position: absolute;
-    bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
+
+/* Stats page styling */
+
+.front-message{
+
+}
+.statistics-container{
+    position: relative;
+    width: 80%;
+    height: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    border: 3px solid black;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.sliders-container{
+    position: absolute;
+    left: 40%;
+    background-color: yellow;
+    width: 20%;
+    margin: 20px;
+    
+}
+.chimp-info-container{
+    
+    width: 35%;
+    height: fit-content;
+    background-color: lightgray;
+    float: left;
+    padding: 15px;
+    margin: 20px;
+    border: 3px solid gray;
+   
+}
+.human-info-container{
+    float: right;
+    width: 35%;
+    height: fit-content;
+    background-color: lightgray;
+    padding: 15px;
+    margin: 20px;
+    border: 3px solid gray;
+    
+}
+
+.chimp-info-container .human-info-container h2{
+    text-align: center;
+}
+
+.sliders{
+    width: 100%;
+    
+}
+
+
+
