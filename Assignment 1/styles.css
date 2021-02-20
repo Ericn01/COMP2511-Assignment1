@@ -46,6 +46,15 @@ html, body{
     padding-bottom: 30px;
     border-bottom: 3px solid black;
 }
+.section-header{
+    font-size: 2.25em;
+    color: dark-grey;
+
+}
+
+.section-header:hover{
+    background-color: rgba(248, 222, 126, 0.25);
+}
 nav ul{
     margin: 0;
 }
@@ -160,4 +169,46 @@ p{
 
 .page-subtitle{
     padding: .25em;
+}
+
+.sliders{
+    margin: 20px;
+}
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30%;
+    height: 7px;
+    outline: gray;
+    border-radius: 3px solid gray;
+    background: linear-gradient(90deg, rgba(224,74,55,1) 0%, rgba(217,249,24,1) 50%, rgba(83,163,36,1) 100%);
+
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 48px;
+    height: 48px;
+    cursor:pointer;
+    position:relative;
+}
+
+.selector{
+    height: 104px;
+    width: 48px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.selection-button{
+    height: 48px;
+    width: 48px;
+    background-image: url(images/information-page/31deb50d5387de914ebdbee2ac75bb76.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
 }
