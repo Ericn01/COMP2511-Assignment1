@@ -413,41 +413,6 @@ button:hover{
     text-align: middle;
 }
 
-/*Sub container*/
-.inquiry-wrapper{
-    display:flex;
-    justify-content:space-between;
-    flex-direction: row;
-    align-items: flex-start;
-    border: 1px #ccc solid;
-    width: 95%;
-    height: 800px;
-
-    background-color:rgba(241, 237, 238, 0.25);
-    border-radius: 20px;
-    padding: 35px;
-}
-
-/*First row flexbox content (subject, email, phone number, date)*/
-.row-one{
-    
-    width: 20%;
-    border:2px solid rgba(241, 237, 238, 0.85);
-}
-/*second row flexbox content (options -> radio, checkbox)*/
-.row-two{
-    width: 30%;
-    margin-top: 10px;
-    padding: 20px;
-    display: grid;
-    border: 2px solid black;
-}
-/*third row flexbox content (textare, submit)*/
-.row-three{
-    width: 40%;
-    border: 2px solid gray;
-}
-
 /* Looks good - no changes required */
 .inquiry-message{
     text-align: center;
@@ -478,26 +443,6 @@ button:hover{
 }
 
 
-   
-.inquiry-form-select{
-
-    border: none;
-    padding: 30px;
-    margin: 10px;
-    width: 200px;
-    border-radius: 5%;
-    cursor:pointer;
-    text-align: center;
-    color:rgba(241, 237, 238, 0.918);
-    background-color: #56CCF2;
-    font-size: 0px;  
-    height: 150px;
-}
-
-.inquiry-form-select:hover{
-    background-color:#2d9cdb;
-}
-
 #send{
     
     background-image: url("images/stats-page/send.png");
@@ -519,9 +464,23 @@ label{
 }
 
 input{
+    cursor: pointer;
     background-color: #d3d3d3;
     border: none;
     color: white;
     font-size: 0.75em;
     border-radius: 10px;
 }
+
+.wrapper h3{
+    font-size: 1.5em;
+    margin-left: 10px;
+    color:rgba(235, 230, 231, 0.918);
+}
+
+.wrapper input{
+    background: lightgray;
+    font-size: 0.8em;
+}
+
+
