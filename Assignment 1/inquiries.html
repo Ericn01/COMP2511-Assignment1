@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inquiries </title>
+    <link rel="stylesheet" title="text/css" href="styles.css">
+    <link rel="shortcut icon" type="iSmage/x-icon"  href="images/favicon.ico">
+</head>
+<body>
+    <header class="inquiries-header">
+
+        <nav class="top-navigation"> 
+            <ul>
+                <li>
+                    <a href="about.html"> About Us </a> 
+                </li>
+                <li>
+                    <a href="booking.html"> Seminar Bookings </a>
+                </li>
+                <li>
+                    <a id="inquiry-page" href="inquiries.html"> Inquiries </a>
+                </li>
+                <li>
+                    <input type="text" maxlength="25" placeholder="Search..." >
+
+                    <button type="submit"> Submit </button>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="index.html">
+            <h1 class="page-title"> The Chimpanzee Foundation  </h1>
+        </a>
+        
+    </header>
+    <main class ="main-container">
+       
+       <div class="inquiry-form-container">
+        <h2 class="inquiry-message"> Welcome to our contact page. </h2>
+        <h2 class="inquiry-message-bottom"> We'd love to hear your feedback!</h2>
+
+        <div class="divider"> </div>
+       <form class="inquiry-form" action="index.html" method="GET">
+           <div class="inquiry-wrapper">
+                <label> Subject of inquiry*:
+                <input class="inquiry-form" type="text" name="subject"   placeholder="Subject" maxlength ="25" required/>
+                </label>
+
+                <label> Email*: 
+                <input class= "inquiry-form" type="email" name="email" placeholder="youremail@xyz.com" required/>
+                </label>
+
+                <label> Phone number:
+                <input class="inquiry-form" type="tel" name="phone" placeholder="(___) ___-____"/>
+                </label>
+
+                <label> Date </label>
+                <input class="inquiry-form" type="date" name="date">
+                
+
+                <div class="radio-buttons"> 
+                <h3> Something </h3>
+
+                <label for="something"> Option One </label>
+
+                <input id="something" type ="radio" name="select">
+
+                <label for="something"> Option Two </label>
+
+                <input id="something" type ="radio" name="select">
+                 
+                <h3> Favorite great ape </h3>
+            
+                <label for="great-ape"> Human </label>
+                <input class="great-ape" type ="checkbox" name="select">
+                <label> Chimpanzee
+                <input class="great-ape" type ="checkbox" name="select">
+                </label>
+
+                <label> Orangutan
+                <input class="great-ape" type ="checkbox" name="select">
+                </label>
+
+                <label> Bonobo 
+                <input class="great-ape" type ="checkbox" name="select">
+                </label>
+
+                Information about the inquiry*: 
+                <textarea id="information" name="information" rows="4" cols="50" required>Enter your information here to contact The Chimp Foundation.</textarea>
+            
+                <input type="submit" class="inquiry-form-button" value="send"/>
+            </div>
+       </form>
+    </div>
+    </main>
+
+    <footer class="front-footer">
+        <div class="footer-container">
+            <p>
+                2021 &copy; The Chimp Foundation. <br>
+                <small> All rights reserved </small>
+            <p>
+        <nav class="top-navigation">
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com">
+                        <img src="images/front-page/YouTube Logo.png"  alt="go to youtube"  target="_blank">
+                    </a>
+                </li>
+                <li>
+                    <a href="https:\\www.facebook.com">
+                        <img src="images/front-page/Facebook Logo.png"  alt="go to Facebook"  target="_blank">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </footer>
+</body>
+</html>

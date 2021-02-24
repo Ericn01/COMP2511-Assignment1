@@ -13,6 +13,7 @@ html, body{
     margin: 0;
 }
 
+
 .main-header {
     background-image: url("images/front-page/top-option-one.jpg");
     background-size: cover;
@@ -22,6 +23,7 @@ html, body{
     border-bottom: 3px solid black;
     
 }
+
 .booking-header {
     background-image: url("images/information-page/info-header.jpg");
     background-size: cover;
@@ -30,7 +32,7 @@ html, body{
     padding-bottom: 30px;
     border-bottom: 3px solid black;
 }
-.stats-header {
+.inquiries-header {
     background-image: url("images/stats-page/stats-main.jpg");
     background-size: cover;
     background-color: lightgray;
@@ -52,8 +54,61 @@ html, body{
 
 }
 
+.search-bar{
+    border: none;
+    width: 10%;
+    background: none;
+    border-bottom: 1px solid white;
+    margin-left: 30px;
+    padding: none;
+    
+}
+
+input[type='text']{
+    font-size: 0.8em;
+    color: rgba(241, 237, 238, 0.95);
+    font-weight:bold;
+
+}
+::placeholder{
+    font-size: 1.35em;
+    font-weight:normal;
+    color: rgba(241, 237, 238, 0.85);
+}
+.search-bar:hover{
+    border-bottom: 2.5px solid white;
+}
+
 .section-header:hover{
     background-color: rgba(248, 222, 126, 0.25);
+}
+.search-bar-text{
+    font-size: 1em;
+    color: rgba(241, 237, 238, 0.918);
+    background: none;
+    border: none;
+}
+
+.search{
+    background: none;
+    border: none;
+    width: 10%;
+    color: rgba(241, 237, 238, 0.918);
+}
+
+.search img{
+    margin-top: 12px;
+    max-width: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    
+    padding: 0;
+}
+
+.inquiry-page::first-letter{
+    font-style: bold;
+    color: red;
 }
 nav ul{
     margin: 0;
@@ -118,12 +173,14 @@ p{
 .behavior-section-chimp{
     float: right;
     text-align: center;
-    margin: 10px;
-    padding: 0px;
+    padding-bottom: 15px;
 }
-.what-are-chimps-image:hover{
-    margin: 0px;
-    padding: 5px;
+
+.bottom-image{
+    float:left;
+    width: 300px;
+    padding: 20px;
+    margin-right: 20px;
 }
 .image-caption-font{
     font-size: 1em;
@@ -156,10 +213,11 @@ p{
 
 .what-are-chimps-image{
     float: left;
-    height: 250px;
+    width: 250px;
     display: block;
     border-radius: 50%;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 .footer-container img {
@@ -259,57 +317,47 @@ p{
 
 /* Stats page styling */
 
-.front-message{
 
-}
-.statistics-container{
-    position: relative;
-    width: 80%;
-    height: 1000px;
-    margin: auto;
-    margin-bottom: 30px;
-    border: 3px solid black;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-.sliders-container{
-    position: absolute;
-    left: 40%;
-    background-color: yellow;
-    width: 20%;
-    margin: 20px;
-    
-}
-.chimp-info-container{
-    
-    width: 35%;
-    height: fit-content;
-    background-color: lightgray;
-    float: left;
-    padding: 15px;
-    margin: 20px;
-    border: 3px solid gray;
-   
-}
-.human-info-container{
-    float: right;
-    width: 35%;
-    height: fit-content;
-    background-color: lightgray;
-    padding: 15px;
-    margin: 20px;
-    border: 3px solid gray;
-    
+
+
+
+.inquiry-form-container{
+
+    padding: 15px 0;
+    background: url("images/stats-page/bg.jpg");
+    background-size: cover;
+    background-color: rgba(0,0,0, 0.65);
+    background-blend-mode: multiply;
+    text-align: middle;
 }
 
-.chimp-info-container .human-info-container h2{
+.inquiry-message{
     text-align: center;
+    font-size: 2em;
+    color: #ddd;
+    margin-bottom: 10px;
 }
 
-.sliders{
-    width: 100%;
+.divider{
+    width: 100px;
+    height: 8px;
+    background: #34495e;
+    margin: 40px auto;
+}
+.inquiry-message-bottom{
+    text-align: center;
+    font-size: 1.5em;
+    color: #dddd;
+}
+
+.inquiry-form{
     
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
 }
 
-
-
+.inquiry-wrapper{
+    display: block;
+    padding: 2em;
+}
