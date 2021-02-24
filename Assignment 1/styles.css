@@ -64,9 +64,10 @@ html, body{
     
 }
 
+
 input[type='text']{
     font-size: 0.8em;
-    color: rgba(241, 237, 238, 0.95);
+    color: white;
     font-weight:bold;
 
 }
@@ -90,20 +91,15 @@ input[type='text']{
 }
 
 .search{
-    background: none;
-    border: none;
-    width: 10%;
+    cursor: pointer;
+    background: lightgray;
+    font-size: 0.75em;
     color: rgba(241, 237, 238, 0.918);
 }
 
-.search img{
-    margin-top: 12px;
-    max-width: 50%;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    
-    padding: 0;
+.required-star{
+    color: red;
+    font-size: 1.5em;
 }
 
 .inquiry-page::first-letter{
@@ -231,7 +227,7 @@ p{
 
 
 
-.button{
+button{
     text-align: center;
     vertical-align: middle;
     padding: .55em;
@@ -245,7 +241,7 @@ p{
     font-weight: bold;
 }
 
-.button:hover{
+button:hover{
     background-color: #2d9cdb;
 }
 
@@ -315,15 +311,101 @@ p{
     width: 30%;
 }
 
+/* About page styling */
+
+.about-heading{
+    text-align: center;
+    font-size: 2em;
+    font-weight:900;
+    
+}
+.about-information{
+    border: 1px solid #ccc;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.content-one{
+    flex-grow: 2;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.content-two{
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.about-image-caption-font{
+    
+    margin: 20px;
+
+    font-size: 2em;
+    text-align: center;
+    color:slategrey;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#chimp{
+    
+    width: 800px;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid gray;
+    
+}
+.donate-box{
+    margin-top: 25px;
+}
+
+
+.donation-amount{
+    padding: 10px;
+    text-align: center;
+}
+.donate{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px;
+    font-size: 0.9em;
+    min-width: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.content-table th, td{
+    padding:12px;
+}
+
+.content-table thead th{
+    background-color: #283747;
+    text-align: left;
+    font-weight: bold;
+    color: snow;
+}
+.content-table tr:last-of-type{
+    border-bottom: 2px solid #283747;
+}
+/* Selects every even row */
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f5;
+}
+
+
 /* Stats page styling */
 
-
-
-
-
 .inquiry-form-container{
-
-    padding: 15px 0;
+    padding: 15px;
     background: url("images/stats-page/bg.jpg");
     background-size: cover;
     background-color: rgba(0,0,0, 0.65);
@@ -331,11 +413,53 @@ p{
     text-align: middle;
 }
 
+/*Sub container*/
+.inquiry-wrapper{
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 1px #ccc solid;
+    width: 95%;
+    height: 800px;
+
+    background-color:rgba(241, 237, 238, 0.25);
+    border-radius: 20px;
+    padding: 35px;
+}
+
+/*First row flexbox content (subject, email, phone number, date)*/
+.row-one{
+    
+    width: 20%;
+    border:2px solid rgba(241, 237, 238, 0.85);
+}
+/*second row flexbox content (options -> radio, checkbox)*/
+.row-two{
+    width: 30%;
+    margin-top: 10px;
+    padding: 20px;
+    display: grid;
+    border: 2px solid black;
+}
+/*third row flexbox content (textare, submit)*/
+.row-three{
+    width: 40%;
+    border: 2px solid gray;
+}
+
+/* Looks good - no changes required */
 .inquiry-message{
     text-align: center;
     font-size: 2em;
     color: #ddd;
     margin-bottom: 10px;
+}
+/* Same here*/
+.inquiry-message-bottom{
+    text-align: center;
+    font-size: 1.5em;
+    color: #dddd;
 }
 
 .divider{
@@ -344,20 +468,60 @@ p{
     background: #34495e;
     margin: 40px auto;
 }
-.inquiry-message-bottom{
-    text-align: center;
-    font-size: 1.5em;
-    color: #dddd;
-}
+
 
 .inquiry-form{
     
-    margin: auto;
-    padding: 0 10px;
+    margin-bottom: 10px;
+    padding: 10px;
     overflow: hidden;
 }
 
-.inquiry-wrapper{
-    display: block;
-    padding: 2em;
+
+   
+.inquiry-form-select{
+
+    border: none;
+    padding: 30px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 5%;
+    cursor:pointer;
+    text-align: center;
+    color:rgba(241, 237, 238, 0.918);
+    background-color: #56CCF2;
+    font-size: 0px;  
+    height: 150px;
+}
+
+.inquiry-form-select:hover{
+    background-color:#2d9cdb;
+}
+
+#send{
+    
+    background-image: url("images/stats-page/send.png");
+    background-repeat: repeat;
+}
+
+#reset{
+    
+    background-image: url("images/stats-page/reset.png") ;
+    background-size: cover;
+}
+
+label{
+    margin: 10px;
+    font-size:1.2em;
+    color: rgba(235, 230, 231, 0.918);
+    letter-spacing: 1px;
+    font-weight:700;
+}
+
+input{
+    background-color: #d3d3d3;
+    border: none;
+    color: white;
+    font-size: 0.75em;
+    border-radius: 10px;
 }

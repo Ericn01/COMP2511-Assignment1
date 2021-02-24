@@ -22,10 +22,12 @@
                 <li>
                     <a id="inquiry-page" href="inquiries.html"> Inquiries </a>
                 </li>
-                <li>
-                    <input type="text" maxlength="25" placeholder="Search..." >
+                <li class="search-bar"> 
+                        
+                    <input type="text" value="" placeholder="Search..." class="search-bar-text" name="input" maxlength="25">
 
-                    <button type="submit"> Submit </button>
+                    <input type="submit" class="submit-button"> </input>
+                   
                 </li>
             </ul>
         </nav>
@@ -37,60 +39,71 @@
     </header>
     <main class ="main-container">
        
-       <div class="inquiry-form-container">
+        <div class="inquiry-form-container">
         <h2 class="inquiry-message"> Welcome to our contact page. </h2>
         <h2 class="inquiry-message-bottom"> We'd love to hear your feedback!</h2>
 
         <div class="divider"> </div>
-       <form class="inquiry-form" action="index.html" method="GET">
-           <div class="inquiry-wrapper">
-                <label> Subject of inquiry*:
-                <input class="inquiry-form" type="text" name="subject"   placeholder="Subject" maxlength ="25" required/>
-                </label>
+        <form class="inquiry-form" action="eniel662@mtroyal.ca" method="POST">
+           
+            <div class="inquiry-wrapper">
 
-                <label> Email*: 
-                <input class= "inquiry-form" type="email" name="email" placeholder="youremail@xyz.com" required/>
-                </label>
+                <div class="row-one">
+                    <label> Subject of inquiry </span class="required-star">*</span> :
+                    <input class="inquiry-form" type="text" name="subject"   placeholder="Subject" maxlength ="25" required/>
+                    </label>
 
-                <label> Phone number:
-                <input class="inquiry-form" type="tel" name="phone" placeholder="(___) ___-____"/>
-                </label>
+                    <label> Email </span class="required-star">*</span> : 
+                    <input class= "inquiry-form" type="email" name="email" placeholder="youremail@xyz.com" required/>
+                    </label>
 
-                <label> Date </label>
-                <input class="inquiry-form" type="date" name="date">
-                
+                    <label> Phone number:
+                    <input class="inquiry-form" type="tel" name="phone" placeholder="(___) ___-____"/>
+                    </label>
 
-                <div class="radio-buttons"> 
-                <h3> Something </h3>
+                    <label> Date </label>
+                    <input class="inquiry-form" type="date" name="date">
+                </div>
 
-                <label for="something"> Option One </label>
+                <div class="row-two"> 
+                    <h3> Something </h3>
 
-                <input id="something" type ="radio" name="select">
+                    <label for="something"> Option One </label>
 
-                <label for="something"> Option Two </label>
+                    <input id="something" type ="radio" name="select">
 
-                <input id="something" type ="radio" name="select">
+                    <label for="something"> Option Two </label>
+
+                    <input id="something" type ="radio" name="select">
                  
-                <h3> Favorite great ape </h3>
+                    <h3> Favorite great ape </h3>
             
-                <label for="great-ape"> Human </label>
-                <input class="great-ape" type ="checkbox" name="select">
-                <label> Chimpanzee
-                <input class="great-ape" type ="checkbox" name="select">
-                </label>
+                    <label for="great-ape"> Human </label>
+                    <input class="great-ape" type ="checkbox" name="select">
+                    <label> Chimpanzee
+                    <input class="great-ape" type ="checkbox" name="select">
+                    </label>
 
-                <label> Orangutan
-                <input class="great-ape" type ="checkbox" name="select">
-                </label>
+                    <label> Orangutan
+                    <input class="great-ape" type ="checkbox" name="select">
+                    </label>
 
-                <label> Bonobo 
-                <input class="great-ape" type ="checkbox" name="select">
-                </label>
+                    <label> Bonobo 
+                    <input class="great-ape" type ="checkbox" name="select">
+                    </label>
+                </div>
 
-                Information about the inquiry*: 
-                <textarea id="information" name="information" rows="4" cols="50" required>Enter your information here to contact The Chimp Foundation.</textarea>
-            
-                <input type="submit" class="inquiry-form-button" value="send"/>
+                <div class="row-three">
+                    <h3>Information about the inquiry*: 
+                    <textarea id="information" name="information" rows="4" cols="50" required>Enter your information here to contact The Chimp Foundation.</textarea>
+                
+                
+                    <input type="submit" class="inquiry-form-select" id="send" value="send" name="submit"/>
+
+                    <input type="reset" class="inquiry-form-select" id="reset" value="reset" name="reset"/>
+
+                </div>
+
             </div>
        </form>
     </div>
