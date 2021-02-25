@@ -342,8 +342,8 @@ button:hover{
 
 #chimp{
     
-    width: 800px;
-    text-align: center;
+    width: 400px;
+    text-align: right;
     margin: 20px;
     border: 2px solid gray;
     
@@ -389,6 +389,8 @@ button:hover{
 }
 .content-table tr:last-of-type{
     border-bottom: 2px solid #283747;
+    border-width:thick; 
+    border-spacing: inherit; 
 }
 /* Selects every even row */
 .content-table tbody tr:nth-of-type(even){
