@@ -69,7 +69,6 @@ input[type='text']{
     font-size: 0.8em;
     color: white;
     font-weight:bold;
-
 }
 ::placeholder{
     font-size: 1.35em;
@@ -90,12 +89,7 @@ input[type='text']{
     border: none;
 }
 
-.search{
-    cursor: pointer;
-    background: lightgray;
-    font-size: 0.75em;
-    color: rgba(241, 237, 238, 0.918);
-}
+
 
 .required-star{
     color: red;
@@ -405,6 +399,7 @@ button:hover{
 /* Stats page styling */
 
 .inquiry-form-container{
+   
     padding: 15px;
     background: url("images/stats-page/bg.jpg");
     background-size: cover;
@@ -434,37 +429,15 @@ button:hover{
     margin: 40px auto;
 }
 
-
-.inquiry-form{
-    
-    margin-bottom: 10px;
-    padding: 10px;
-    overflow: hidden;
-}
-
-
-#send{
-    
-    background-image: url("images/stats-page/send.png");
-    background-repeat: repeat;
-}
-
-#reset{
-    
-    background-image: url("images/stats-page/reset.png") ;
-    background-size: cover;
-}
-
-label{
+.inquiry-form-container label{
     margin: 10px;
-    font-size:1.2em;
-    color: rgba(235, 230, 231, 0.918);
+    font-size: 0.85em;
     letter-spacing: 1px;
-    font-weight:700;
+    font-weight:normal;
+    color: white;
+   
 }
-
-input{
-    cursor: pointer;
+.submit-button{
     background-color: #d3d3d3;
     border: none;
     color: white;
@@ -472,15 +445,67 @@ input{
     border-radius: 10px;
 }
 
+
+.item-container input{
+    
+    padding: 5px;
+    border: none;
+    margin-left: 15px;
+
+}
+
+
 .wrapper h3{
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin-left: 10px;
     color:rgba(235, 230, 231, 0.918);
+
 }
 
-.wrapper input{
-    background: lightgray;
+.regular-info input{
+    width: 200px;
+    background-color: rgba(0,0,0, 0.45);
     font-size: 0.8em;
+    margin-left: 10px;
+
+}
+.item-container{
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    min-width: 30%;
+    
+}
+.wrapper{
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
+.item-container label{
+    margin: auto;
+    margin-bottom: 10px;
+    width: 50%;
+}
+textarea{
+    background: none;
+    width: 300px;
+    height: 200px;
+}
+input[type="date"]{
+    width: 200px;
+    background-color: rgba(0,0,0, 0.45);
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+.item-container .btn{
+    padding: 12px;
+    width: 100px;
+    background-color:rgba(53, 165, 180, 0.8);
+    color:rgba(235, 230, 231, 0.918);
+    font-weight: bold;
+    border:none;
+    border-radius: 5%;
+    cursor: pointer;
+    font-size: 1.3em;
+    box-shadow: 2px 2px black;
+}
 

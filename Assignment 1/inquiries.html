@@ -48,35 +48,47 @@
            
             <div class="wrapper">
 
-                
-                    <label> Subject of inquiry </span class="required-star">*</span> :
-                    <input class="inquiry-form" type="text" name="subject"   placeholder="Subject" maxlength ="25" required/>
+                    <div class="item-container">
+                    <label class="regular-info"> Subject of inquiry*:
+                    <input class="inquiry-input" type="text" name="subject"   placeholder="Subject" maxlength ="25" required/>
                     </label>
+                    </div>
 
-                    <label> Email </span class="required-star">*</span> : 
-                    <input class= "inquiry-form" type="email" name="email" placeholder="youremail@xyz.com" required/>
-                    </label>
+                    <div class="item-container">
+                        <label class="regular-info"> Email *: 
+                            <input class= "inquiry-input" type="email" name="email" placeholder="youremail@xyz.com" required/>
+                        </label>
+                    </div>
 
-                    <label> Phone number:
-                    <input class="inquiry-form" type="tel" name="phone" placeholder="(___) ___-____"/>
-                    </label>
+                    <div class="item-container">
+                        <label class="regular-info"> Phone number:
+                            <input class="inquiry-input" type="tel" name="phone" placeholder="(___) ___-____"/>
+                        </label>
+                    </div>
 
-                    <label> Date </label>
-                    <input class="inquiry-form" type="date" name="date">
-               
+                    <div class="item-container">
+                        <label class="regular-info"> Date: </label>
+                        <input class="inquiry-input" type="date" name="date">
+                    </div>
 
-                
-                    <h3> Something </h3>
+                    <div class="item-container">
+                    <h3>Did you enjoy your time on the chimpanzee foundation website?</h3>
 
-                    <label for="something"> Option One </label>
+                        <label for="something"> Yes </label>
 
-                    <input id="something" type ="radio" name="select">
+                        <input id="something" type ="radio" name="select">
 
-                    <label for="something"> Option Two </label>
+                        <label for="something"> No </label>
 
-                    <input id="something" type ="radio" name="select">
-                 
-                    <h3> Favorite great ape </h3>
+                        <input id="something" type ="radio" name="select">
+
+                        <label for="something"> Don't know </label>
+
+                        <input id="something" type ="radio" name="select">
+                    </div>
+
+                    <div class="item-container">
+                    <h3> Your favorite great ape </h3>
             
                     <label for="great-ape"> Human </label>
                     <input class="great-ape" type ="checkbox" name="select">
@@ -92,15 +104,19 @@
                     <input class="great-ape" type ="checkbox" name="select">
                     </label>
                 
-               
-                    <h3>Information about the inquiry*: 
-                    <textarea id="information" name="information" rows="4" cols="50" required>Enter your information here to contact The Chimp Foundation.</textarea>
-                
-                
-                    <input type="submit"  value="send" name="submit"/>
+                    </div>
+                    <div class="item-container">
+                        <h3>Information about the inquiry*: </h3>
+                            
+                        <textarea id="information" name="information" rows="4" cols="50" required>Enter your information here to contact The Chimp Foundation.</textarea>
+                    </div>
 
-                    <input type="reset" value="reset" name="reset"/>
-
+                    <div class="item-container">
+                    
+                    <input class="btn" type="submit"  value="send" name="submit"/>
+                    <input class="btn" type="reset" value="reset" name="reset"/>
+                    
+                    </div>
             </div>
        </form>
     </div>
