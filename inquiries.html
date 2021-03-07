@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inquiries </title>
+    <link rel="stylesheet" title="text/css" href="styles.css">
+    <link rel="shortcut icon" type="iSmage/x-icon"  href="images/favicon.ico">
+</head>
+<body>
+    <header class="inquiries-header">
+
+        <nav class="top-navigation"> 
+            <ul>
+                <li>
+                    <a href="about.html"> About Us </a> 
+                </li>
+                <li>
+                    <a href="booking.html"> Seminar Bookings </a>
+                </li>
+                <li>
+                    <a id="inquiry-page" href="inquiries.html"> Inquiries </a>
+                </li>
+                <li class="search-bar"> 
+                        
+                    <input type="text" value="" placeholder="Search..." class="search-bar-text" name="input" maxlength="25">
+
+                    <input type="submit" class="submit-button"> </input>
+                   
+                </li>
+            </ul>
+        </nav>
+
+        <a href="index.html">
+            <h1 class="page-title"> The Chimpanzee Foundation  </h1>
+        </a>
+        
+    </header>
+    <main class ="main-container">
+       
+        <div class="inquiry-form-container">
+        <h2 class="inquiry-message"> Welcome to our contact page. </h2>
+        <h2 class="inquiry-message-bottom"> We'd love to hear your feedback!</h2>
+
+        <div class="divider"> </div>
+        <form class="inquiry-form" action="eniel662@mtroyal.ca" method="POST">
+           
+            <div class="wrapper">
+
+                    <div class="item-container">
+                    <label class="regular-info"> Subject of inquiry*:
+                    <input class="inquiry-input" type="text" name="subject"   placeholder="Subject" maxlength ="25" required/>
+                    </label>
+                    </div>
+
+                    <div class="item-container">
+                        <label class="regular-info"> Email *: 
+                            <input class= "inquiry-input" type="email" name="email" placeholder="youremail@xyz.com" required/>
+                        </label>
+                    </div>
+
+                    <div class="item-container">
+                        <label class="regular-info"> Phone number:
+                            <input class="inquiry-input" type="tel" name="phone" placeholder="(___) ___-____"/>
+                        </label>
+                    </div>
+
+                    <div class="item-container">
+                        <label class="regular-info"> Date: </label>
+                        <input class="inquiry-input" type="date" name="date">
+                    </div>
+
+                    <div class="item-container">
+                    <h3>Did you enjoy your time on the chimpanzee foundation website?</h3>
+
+                        <label for="something"> Yes </label>
+
+                        <input id="something" type ="radio" name="select">
+
+                        <label for="something"> No </label>
+
+                        <input id="something" type ="radio" name="select">
+
+                        <label for="something"> Don't know </label>
+
+                        <input id="something" type ="radio" name="select">
+                    </div>
+
+                    <div class="item-container">
+                    <h3> Your favorite great ape </h3>
+            
+                    <label for="great-ape"> Human </label>
+                    <input class="great-ape" type ="checkbox" name="select">
+                    <label> Chimpanzee
+                    <input class="great-ape" type ="checkbox" name="select">
+                    </label>
+
+                    <label> Orangutan
+                    <input class="great-ape" type ="checkbox" name="select">
+                    </label>
+
+                    <label> Bonobo 
+                    <input class="great-ape" type ="checkbox" name="select">
+                    </label>
+                
+                    </div>
+                    <div class="item-container">
+                        <h3>Information about the inquiry*: </h3>
+                            
+                        <textarea id="information" name="information" rows="4" cols="50" required>Enter your information here to contact The Chimp Foundation.</textarea>
+                    </div>
+
+                    <div class="item-container">
+                    
+                    <input class="btn" type="submit"  value="send" name="submit"/>
+                    <input class="btn" type="reset" value="reset" name="reset"/>
+                    
+                    </div>
+            </div>
+       </form>
+    </div>
+    </main>
+
+    <footer class="front-footer">
+        <div class="footer-container">
+            <p>
+                2021 &copy; The Chimp Foundation. <br>
+                <small> All rights reserved </small>
+            <p>
+        <nav class="top-navigation">
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com">
+                        <img src="images/front-page/YouTube Logo.png"  alt="go to youtube"  target="_blank">
+                    </a>
+                </li>
+                <li>
+                    <a href="https:\\www.facebook.com">
+                        <img src="images/front-page/Facebook Logo.png"  alt="go to Facebook"  target="_blank">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </footer>
+</body>
+</html>
