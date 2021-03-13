@@ -1,0 +1,75 @@
+/* Seminar bookings page CSS */
+
+.booking-header {
+    background-image: url("styles-images/info-header.jpg");
+    background-size: cover;
+    background-color: lightgray;
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+    border-bottom: 3px solid black;
+}
+.front-message{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.seminar-header{
+    font-size: 2.5em;
+    font: dark-grey;
+    color: rgb(42, 74, 122);
+    text-shadow: 1px 1px black;
+}
+.seminar-subheader{
+    font-size: 1em;
+    font-style: italic;
+
+}
+
+.seminar-row{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.seminar-row:last-child {
+    border-bottom: none;
+    margin-bottom: 30px;
+}
+
+.seminar-item{
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.seminar-date{
+    color: #555;
+    font-weight: bold;
+    width: 15%;
+}
+
+.seminar-location{
+    width: 24%;
+}
+
+.seminar-venue{
+    width: 42%;
+}
+
+.waving-chimp{
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: auto;
+}
+
+.booking-text{
+    background-color: lightblue;
+    text-align: center;
+    font-size: 2em;
+}
+.seminar-image{
+    margin-bottom: 25px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}

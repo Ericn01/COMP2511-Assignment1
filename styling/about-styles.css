@@ -1,0 +1,102 @@
+/* About page styling */
+.about-header {
+    background-image: url("styles-images/about-main.jpg");
+    background-size: cover;
+    background-color: lightgray;
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+    border-bottom: 3px solid black;
+}
+.about-heading{
+    text-align: center;
+    font-size: 2em;
+    font-weight:900;
+    
+}
+.about-information{
+    border: 1px solid #ccc;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.content-one{
+    flex-grow: 2;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.content-two{
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.about-image-caption-font{
+    
+    margin: 20px;
+
+    font-size: 2em;
+    text-align: center;
+    color:slategrey;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#chimp{
+    
+    width: 400px;
+    text-align: right;
+    margin: 20px;
+    border: 2px solid gray;
+    
+}
+.donate-box{
+    margin-top: 25px;
+}
+
+
+.donation-amount{
+    padding: 10px;
+    text-align: center;
+}
+
+
+.donate{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px;
+    font-size: 0.9em;
+    min-width: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.content-table th, td{
+    padding:12px;
+}
+
+.content-table thead th{
+    background-color: #283747;
+    text-align: left;
+    font-weight: bold;
+    color: snow;
+}
+.content-table tr:last-of-type{
+    border-bottom: 2px solid #283747;
+    border-width:thick; 
+    border-spacing: inherit; 
+}
+/* Selects every even row */
+.content-table tbody tr:nth-of-type(even){
+    background-color: #f3f3f5;
+}
+
+

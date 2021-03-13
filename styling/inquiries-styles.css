@@ -1,0 +1,101 @@
+/* Inquiries page CSS*/
+.inquiries-header {
+    background-image: url("styles-images/stats-main.jpg");
+    background-size: cover;
+    background-color: lightgray;
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+    border-bottom: 3px solid black;
+}
+.inquiry-form-container{
+   
+    padding: 15px;
+    background: url("images/stats-page/bg.jpg");
+    background-size: cover;
+    background-color: rgba(0,0,0, 0.65);
+    background-blend-mode: multiply;
+    text-align: middle;
+}
+
+/* Looks good - no changes required */
+.inquiry-message{
+    text-align: center;
+    font-size: 2em;
+    color: #ddd;
+    margin-bottom: 10px;
+}
+/* Same here*/
+.inquiry-message-bottom{
+    text-align: center;
+    font-size: 1.5em;
+    color: #dddd;
+}
+
+.divider{
+    width: 100px;
+    height: 8px;
+    background: #34495e;
+    margin: 40px auto;
+}
+
+.inquiry-form-container label{
+    margin: 10px;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+    font-weight:normal;
+    color: white;
+   
+}
+
+.item-container input{
+    
+    padding: 5px;
+    border: none;
+    margin-left: 15px;
+
+}
+
+
+.wrapper h3{
+    font-size: 1.25em;
+    margin-left: 10px;
+    color:rgba(235, 230, 231, 0.918);
+
+}
+
+.regular-info input{
+    width: 200px;
+    background-color: rgba(0,0,0, 0.45);
+    font-size: 0.8em;
+    margin-left: 10px;
+
+}
+.item-container{
+    margin: 0 auto;
+    padding: 10px;
+    width: 50%;
+    min-width: 30%;
+    
+}
+.wrapper{
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.item-container label{
+    margin: auto;
+    margin-bottom: 10px;
+    width: 50%;
+}
+textarea{
+    background: none;
+    width: 300px;
+    height: 200px;
+}
+input[type="date"]{
+    width: 200px;
+    background-color: rgba(0,0,0, 0.45);
+    font-size: 0.8em;
+    margin-left: 10px;
+}
+
+
