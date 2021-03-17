@@ -1,0 +1,107 @@
+form{
+    
+}
+body{
+    display: grid;
+    grid-template-columns: 100%; /* A single column*/
+    grid-template-rows: 10%, 82%, 8%;
+}
+header{
+    
+    background-image: url("styles-images/top-option-one.jpg");
+    background-size: cover;
+    background-color: lightgray;
+    background-blend-mode: multiply;
+    
+}
+.header-nav{
+    border: 1px solid #dfdfdf;
+}
+nav ul{
+    text-decoration: none;
+    
+}
+.logo{
+    width: 50px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+/* Wrapper containing the main grid. 
+   Divides the top section, mid section,
+   and the form at the bottom of the page */
+.wrapper{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30%, 40%, 30%;
+    color: gray;  
+    margin-top: 10px;
+    grid-gap: 20px;
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.slogan{
+    font-size: 2.5em;
+    font-weight: bold;
+    font-style: italic;
+
+    color:crimson;
+    text-shadow: 2px 2px black;
+
+}
+.content-table{
+    margin: auto;
+    width: 90%;
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    grid-gap: 20px;
+    border-bottom: 20px;
+}
+.box1{
+    grid-column-start: 1/2;
+    grid-row-start: 1/2;
+}
+.box-2{
+    grid-column-start: 1/2;
+    grid-row-start: 2/2;
+}
+.box3{
+    grid-column-start: 2/2;
+    grid-row-start: 1/2;
+}
+.box4{
+    grid-column-start: 2/2;
+    grid-row-start: 2/2;
+}
+
+.form-container{
+    align-items: center;
+    margin: auto;
+}
+
+.form-input{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+label{
+    display: inline-block;
+    width: 275px;
+}
+#name{
+
+}
+
+#email{
+
+}
+
+#textarea{
+    
+}
