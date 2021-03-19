@@ -36,12 +36,18 @@ a:hover{
     text-shadow: 2px 2px solid gray;
 }
 .logo{
-
     vertical-align: middle;
 }
+
 header div{
     margin: 10px;
     padding: 20px;
+}
+.header-nav{
+    display: inline-block;
+}
+form {
+    text-align: center;
 }
 main{
    /* background: linear-gradient(#e66465, #9198e5); */
@@ -58,6 +64,7 @@ main{
     flex-direction: row;
 }
 .info-text p{
+    line-height: 130%;
     background-color: rgba(255,107,107, 0.75);
     border-radius: 50px;
     font-size: 1em;
@@ -78,9 +85,21 @@ main{
     color: goldenrod;
 }
 
+.header-nav{
+    display: table;
+    margin: 0 auto;
+    border: 3px outset black;
+    flex-basis: 30%;
+}
+.header-nav ul{
+    display:inline-block;
+    
+    border-right: 1px solid white;
+    text-align: center;
+}
 footer{
     grid-column: span 3;
-    background: linear-gradient(#355c7d, #f9bd24);
+    background: linear-gradient(#355c7d, #fd5e53);
 }
 footer h1{
     color: white;
@@ -146,12 +165,12 @@ textarea{
     outline: none;
     border: 3px solid #cccccc;
     border-radius: 14px;
-    width: 500px;
+    width: 600px;
     height: 300px;
+    min-width: 300px;
 }
-header ul{
-    list-style-type: none;
-    display: inline-block;
+li{
+    display: inline;
 }
 
 .left-image{
