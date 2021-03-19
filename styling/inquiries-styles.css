@@ -11,7 +11,7 @@
 .inquiry-form-container{
    
     padding: 15px;
-    background: url("images/stats-page/bg.jpg");
+    background: url("../images/stats-page/bg.jpg");
     background-size: cover;
     background-color: rgba(0,0,0, 0.65);
     background-blend-mode: multiply;

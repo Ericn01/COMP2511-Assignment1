@@ -11,7 +11,14 @@
     text-align: center;
     font-size: 2em;
     font-weight:900;
-    
+}
+.nav-links img{
+    margin-right: 20px;
+    padding: 10px;
+}
+.links{
+    padding: 10px;
+    margin-right: 10px;;
 }
 .about-information{
     border: 1px solid #ccc;
@@ -19,6 +26,7 @@
     display: flex;
     flex-direction: row;
 }
+
 .content-one{
     flex-grow: 2;
     margin-top: 30px;
